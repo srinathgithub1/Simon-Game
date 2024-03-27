@@ -15,6 +15,15 @@ document.addEventListener("keypress",function(){
         levelUp();
     }
 });
+// new adding
+let startBtn=document.querySelector(".start-btn");
+startBtn.addEventListener("click",function(){
+    if(started == false){
+        started=true;
+        levelUp();
+    }
+});
+
 function gameFlash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
@@ -38,6 +47,7 @@ function levelUp(){
     gameSeq.push(randColor);
     gameFlash(randBtn);
 }
+
 function checkAns(idx){
     if(userSeq[idx]==gameSeq[idx]){
         if(userSeq.length == gameSeq.length){

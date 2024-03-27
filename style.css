@@ -52,6 +52,9 @@ h2{
     height: 100px;
     padding: 10px 0;
 }
+.start-btn{
+    visibility: hidden;
+}
 /* add from app.js */
 .flash{
     background-color: white;
@@ -73,6 +76,17 @@ h2{
         font-weight: 800;
         width: 80%;
         height: 50px;
+    }
+    .start-btn{
+        visibility: visible;
+        width: 100px;
+        height: 40px;
+        margin-top: 50px;
+        background-color: darksalmon;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: white;
+        font-weight: 800;
     }
 }
 @media (max-width:380px){
